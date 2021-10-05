@@ -7,13 +7,14 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
     module.exports = {
         title: "iContribute Documentation",
         tagline: "iContribute",
-        url: "https://icontribute.community",
+        url: "https://icontribute-founder.github.io",
         baseUrl: "/",
+        projectName: "documentation",
+        organizationName: "icontribute-founder",
         onBrokenLinks: "throw",
         onBrokenMarkdownLinks: "warn",
         favicon: "img/favicon.ico",
-        organizationName: "iContribute",
-        projectName: "iContribute Documentation",
+        trailingSlash: false,
         presets: [
             [
                 "@docusaurus/preset-classic",
