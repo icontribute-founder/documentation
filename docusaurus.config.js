@@ -8,7 +8,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
         title: "iContribute Documentation",
         tagline: "iContribute",
         url: "https://icontribute-founder.github.io",
-        baseUrl: "/",
+        baseUrl: "/documentation/",
         projectName: "documentation",
         organizationName: "icontribute-founder",
         onBrokenLinks: "throw",
