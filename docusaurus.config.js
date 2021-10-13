@@ -23,6 +23,9 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
                     docs: {
                         sidebarPath: require.resolve("./sidebars.js"),
                         routeBasePath: "/",
+                        editUrl:
+                            "https://github.com/icontribute-founder/documentation/edit/main/",
+                        showLastUpdateTime: true,
                     },
                     theme: {
                         customCss: require.resolve("./src/css/custom.css"),
@@ -34,6 +37,12 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
         themeConfig:
             /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
             ({
+                hideableSidebar: true,
+                colorMode: {
+                    defaultMode: "light",
+                    disableSwitch: true,
+                    respectPrefersColorScheme: true,
+                },
                 navbar: {
                     title: "iContribute Developers",
                     hideOnScroll: true,
@@ -55,8 +64,8 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
                     copyright: `Copyright © ${new Date().getFullYear()} iContribute Team. Built with Docusaurus.`,
                 },
                 prism: {
-                    theme: lightCodeTheme,
-                    darkTheme: darkCodeTheme,
+                    darkTheme: lightCodeTheme,
+                    theme: darkCodeTheme,
                 },
             }),
     }
